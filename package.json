@@ -5,8 +5,8 @@
   "main": "fsModule.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "node server.cjs",
-    "dev" : "nodemon server.cjs"
+    "start": "node server.cjs",
+    "dev": "nodemon server.cjs"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "homepage": "https://github.com/Rubel-erald/Back-end-basics-#readme",
   "devDependencies": {
     "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
