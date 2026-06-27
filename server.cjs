@@ -11,6 +11,6 @@ const server = http.createServer((req , res) => {
 
 // run the http server using node filename 
 server.listen(3000 , "localhost" , () => {
-    console.log("hello");
+    console.log("server is running");
 })
 

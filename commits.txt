@@ -2,3 +2,9 @@ commits
 1. creating a http server 
 2. initializing this project as a npm (npm init -y) it will install package.json
 3. file system module (fs module)
+
+class 2
+4.there are two different types of dependencies 
+=> regular 
+=> dev dependencies
+5.install nodemon npm install nodemon --save-dev
