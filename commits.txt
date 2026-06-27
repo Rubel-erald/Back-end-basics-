@@ -1,0 +1,4 @@
+commits 
+1. creating a http server 
+2. initializing this project as a npm (npm init -y) it will install package.json
+3. file system module (fs module)
