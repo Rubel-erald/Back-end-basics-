@@ -8,3 +8,4 @@ class 2
 => regular 
 => dev dependencies
 5.install nodemon npm install nodemon --save-dev
+6.headers how the response have to be in json format or plain text or html content 
