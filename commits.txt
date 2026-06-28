@@ -11,3 +11,9 @@ class 2
 6.headers how the response have to be in json format or plain text or html content 
 7.making this server as restfull server the server has to understand the methods of get,post,put,delete 
 8.installing express js  - npm install express
+9.using express js creating the server and making restful server 
+
+express.js and restful api
+1.middleware
+2.seperating each and every function to their own files
+
