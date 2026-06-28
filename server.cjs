@@ -68,47 +68,59 @@
 
 // middleware
 // middleware is a simple function
-const express = require("express");
-const app = express();
+// const express = require("express");
+// const app = express();
 
-// creating a middleware function
-const logger = (req, res, next) => {
-  console.log("i am the first middleware");
-  next(); //it will allow to the next middleware
-};
+// // creating a middleware function
+// const logger = (req, res, next) => {
+//   console.log("i am the first middleware");
+//   next(); //it will allow to the next middleware
+// };
 
-app.use(logger); //run the middleware
+// app.use(logger); //run the middleware
 
-const logger2 = (req, res, next) => {
-  console.log("stopppp logger 2");
-  next();
-};
+// const logger2 = (req, res, next) => {
+//   console.log("stopppp logger 2");
+//   next();
+// };
 
-app.use(logger2);
+// app.use(logger2);
 
-// end points with routs
-app.get("/", (req, res) => {
-  res.json({ message: "hello express js " });
-});
-app.post("/", (req, res) => {
-  res.json({ message: "hello post" });
-});
-app.put("/", (req, res) => {
-  res.json({ message: "hello put" });
-});
-app.delete("/", (req, res) => {
-  res.json({ message: "hello delete" });
-});
+// // end points with routs
+// app.get("/", (req, res) => {
+//   res.json({ message: "hello express js " });
+// });
+// app.post("/", (req, res) => {
+//   res.json({ message: "hello post" });
+// });
+// app.put("/", (req, res) => {
+//   res.json({ message: "hello put" });
+// });
+// app.delete("/", (req, res) => {
+//   res.json({ message: "hello delete" });
+// });
 
-const errorHandler = (req, res, next) => {
-  res.json({ message: "there is no such a end point" });
-};
-app.use(errorHandler);
+// const errorHandler = (req, res, next) => {
+//   res.json({ message: "there is no such a end point" });
+// };
+// app.use(errorHandler);
 
-// end points with name
-app.get("/users", (req, res) => {
-  res.json({ message: "hello users" });
-});
+// // end points with name
+// app.get("/users", (req, res) => {
+//   res.json({ message: "hello users" });
+// });
+
+// app.listen(3001, "localhost", (err) => {
+//   if (err) {
+//     console.log(err.message);
+//     return;
+//   }
+//   console.log("express js server is running");
+// });
+
+// moving to seperate files
+
+const app = require ("./app");
 
 app.listen(3001, "localhost", (err) => {
   if (err) {
