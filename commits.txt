@@ -17,3 +17,8 @@ express.js and restful api
 1.middleware
 2.seperating each and every function to their own files
 
+class 2
+3.mongo db cloud setup
+4.install mongoose (npm install mongoose) for connecting to database
+5.(dotenv) library to protect the credentials 
+

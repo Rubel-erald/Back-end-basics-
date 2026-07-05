@@ -120,12 +120,26 @@
 
 // moving to seperate files
 
-const app = require ("./app");
+const app = require("./app");
+const mongoose = require("mongoose");
+const dns = require("node:dns")
+dns.setServers(["1.1.1.1", "1.0.0.1"] )
+
 
 app.listen(3001, "localhost", (err) => {
   if (err) {
-    console.log(err.message);
+    console.log(err);
     return;
   }
   console.log("express js server is running");
 });
+
+mongoose
+  .connect("mongodb+srv://rubeleraldj_db_user:Guvi123@rubel-cluster.ddday0w.mongodb.net/")
+  .then(() => {
+    console.log("Database connected");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
